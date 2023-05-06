@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: solid black;
+            background-color: rgb(235, 222, 191);
+            display: inline-block;
+            background-image: url(../jquery/img/pexels-pixabay-36717.jpg);
+            transition: 2s;
+            animation: rotate 5s infinite;
+        }
+        @keyframes rotate {
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+
+                $(this).width(400).css(
+                    
+                )
+            })
+        })
+    </script>
+
+</body>
+
+</html>

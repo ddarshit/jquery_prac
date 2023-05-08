@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: rgb(0, 123, 255);
+            border: dotted 2px brown;
+            transition: 2s;
+            width: 1000px;
+            margin: 0 auto;
+            text-transform: uppercase;
+           
+        }
+        h1 {
+            color: rgb(201, 201, 20);
+            text-align: center;
+            animation: rotate 5s infinite;
+           
+        }
+        @keyframes rotate {
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+    
+    <div id="box">
+        <h1>somthing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, laboriosam maxime natus odio nam eveniet eius ipsum harum explicabo architecto placeat voluptatem quia dolorum at tempora sapiente facere consequuntur aliquid!</p>
+    </div>
+
+    <script>
+
+        console.log($("#box h1").position()); 
+    </script>
+</body>
+</html>

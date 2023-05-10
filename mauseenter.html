@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+</head>
+<body>
+    <p id="pre" class="bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, odio deleniti consequatur dolor ipsam perspiciatis eum minus earum? Assumenda, vitae laboriosam. Suscipit ab repudiandae, obcaecati corrupti esse neque vero eveniet?</p>
+
+    <script>
+        $(document).ready(function(){
+          $("#pre").mouseenter(function () {
+              console.log("you enter the pre")
+              document.getElementById("pre").style.backgroundColor = "blue"
+              document.getElementById("pre").style.color = "white"
+              document.getElementById("pre").style.fontSize = "50px"
+          })
+          $("#pre").mouseleave(function () {
+            console.log("your not  enter the  pre")
+            document.getElementById("pre").style.backgroundColor = "red"
+            document.getElementById("pre").style.color = "black"
+            document.getElementById("pre").style.fontSize = "25px"
+          })
+        });
+    </script>
+</body>
+</html>
